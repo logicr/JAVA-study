@@ -84,7 +84,7 @@ public class Test {
 		// Manager man = new Manager();
 		Role emp = new Employee(12,"Jan",23,"man",12);
 		emp.play();
-		this.sing();
+		// emp.sing();//怎么实现在这儿调用this方法
 		System.out.println("+++++++++++++++++++++++++++++++++");
 		Role man = new Manager(555,"logicr",202,"man",88);
 		man.play();
