@@ -85,19 +85,46 @@ import java.util.Scanner;
 //}
 
 //用打印流输出，Scanner输入到屏幕
+//public class Test{
+//	public static void main(String[] args) throws IOException {
+//		File file = new File("C:/Users/wrinkle/Desktop/test.txt");
+//		PrintStream pri = new PrintStream(new FileOutputStream(file));
+//		pri.print("Hello");
+//		pri.println(123);
+//		pri.print("hello Jan");
+//		Scanner scanner = new Scanner(new FileInputStream(file));
+//		scanner.useDelimiter("\r\n");
+//		while (scanner.hasNext()) {
+//			System.out.println(scanner.next());
+//		}
+//		pri.close();
+//		scanner.close();
+//	}
+//}
+//字符内容替换
+//public class Test{
+//		public static void main(String[] args) {
+//			String string = "Hello Jan com on";
+//			string = string.replaceAll(" ", "%20");
+//			System.out.println(string);
+//		}
+//}
+//字符串旋转
 public class Test{
-	public static void main(String[] args) throws IOException {
-		File file = new File("C:/Users/wrinkle/Desktop/test.txt");
-		PrintStream pri = new PrintStream(new FileOutputStream(file));
-		pri.print("Hello");
-		pri.println(123);
-		pri.print("hello Jan");
-		Scanner scanner = new Scanner(new FileInputStream(file));
-		scanner.useDelimiter("\r\n");
-		while (scanner.hasNext()) {
-			System.out.println(scanner.next());
+	public static void main(String[] args) {
+		String str = "abcd";
+		Integer num = 6;
+		if (num > str.length()) {
+			num = num % str.length();
 		}
-		pri.close();
-		scanner.close();
+		reverse(str,num);
+	}
+	public static String reverse(String str,Integer num) {
+		StringBuilder sb = new StringBuilder();
+		sb.append(str).append(str);//追加 目的是将字符串扩增 abc->abcabc
+		String newstr = sb.toString();
+		newstr = newstr.substring(num, num+str.length());//截取
+		System.out.println(newstr);
+		return newstr;
 	}
 }
