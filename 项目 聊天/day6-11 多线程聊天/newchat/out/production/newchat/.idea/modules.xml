@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Test/Test.iml" filepath="$PROJECT_DIR$/../Test/Test.iml" />
+      <module fileurl="file://G:/IDEAcode/day6-9 单线程聊天/day6-9 单线程聊天.iml" filepath="G:/IDEAcode/day6-9 单线程聊天/day6-9 单线程聊天.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newchat.iml" filepath="$PROJECT_DIR$/newchat.iml" />
+    </modules>
+  </component>
+</project>
