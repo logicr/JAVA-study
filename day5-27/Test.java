@@ -10,14 +10,14 @@ import java.io.PrintWriter;
 import java.lang.reflect.Field;
 import java.util.Scanner;
 
-//ÓÃIO½«Ò»¸ö¸öµÄÁªÏµÈËµ¼³ö
-//½¨Ò»¸öÁªÏµÈËÀà
+//ç”¨IOå°†ä¸€ä¸ªä¸ªçš„è”ç³»äººå¯¼å‡º
+//å»ºä¸€ä¸ªè”ç³»äººç±»
 class Content{
-	//¸ñÊ½
+	//æ ¼å¼
 //	BEGIN:VCARD
 //	VERSION:3.0
-//	N;CHARSET=UTF-8:ÕÅÈı
-//	FN;CHARSET=UTF-8:ÕÅÈı
+//	N;CHARSET=UTF-8:å¼ ä¸‰
+//	FN;CHARSET=UTF-8:å¼ ä¸‰
 //	TEL;TYPE=CELL:12345678910
 //	END:VCARD
 	private String begin = "BEGIN:VCARD";
@@ -55,12 +55,12 @@ public class Test {
 		}
 		
 		
-//		Content con = new Content("ÎÒÊÇ²âÊÔÓÃÀı", "13314433445");
+//		
 //		OutputStream out = new FileOutputStream(file,true);
 //		out.write(con.toString().getBytes());
-		//·ÅÆúÊ¹ÓÃÀàµÄ·½Ê½
+		//æ”¾å¼ƒä½¿ç”¨ç±»çš„æ–¹å¼
 		
-		//ÓÃÊä³öÁ÷
+		//ç”¨è¾“å‡ºæµ
 		Scanner scanner = new Scanner(System.in);
 		String n = new String();
 		String num = new String();
@@ -72,17 +72,17 @@ public class Test {
 		scanner.close();
 	}
 	public static void content(File file,String n,String num) throws IOException {
-		//¸ñÊ½
+		//æ ¼å¼
 //		BEGIN:VCARD
 //		VERSION:3.0
-//		N;CHARSET=UTF-8:ÕÅÈı
-//		FN;CHARSET=UTF-8:ÕÅÈı
+//		N;CHARSET=UTF-8:å¼ ä¸‰
+//		FN;CHARSET=UTF-8:å¼ ä¸‰
 //		TEL;TYPE=CELL:12345678910
 //		END:VCARD
-		String N = "N;CHARSET=UTF-8:";//±ØĞë¼Ó
+		String N = "N;CHARSET=UTF-8:";//å¿…é¡»åŠ 
 //		String N = "N;";
 		N = N + n;
-		String FN = "FN;CHARSET=UTF-8:";//±ØĞë¼ÓÉÏ
+		String FN = "FN;CHARSET=UTF-8:";//å¿…é¡»åŠ ä¸Š
 //		String FN = "FN;";
 		FN = FN +n;
 		String TEL = "TEL;TYPE=CELL:";
@@ -90,8 +90,8 @@ public class Test {
 		
 //		PrintStream prin = new PrintStream(new FileOutputStream(file,true));
 //		new PrintStream(file, "UTF-8");
-//		PrintStream prin = new PrintStream(file, "UTF-8");//ÉèÖÃ×Ö·û¼¯£¬ºÜÖØÒª°¡£¬²»È»ÂÒÂë£¬³ÌĞò5·ÖÖÓ£¬µ÷ÂëÁ½Ğ¡Ê±°¡
-		OutputStream out = new FileOutputStream(file,true);//ÊµÏÖ×·¼ÓÊäÈë
+//		PrintStream prin = new PrintStream(file, "UTF-8");//è®¾ç½®å­—ç¬¦é›†ï¼Œå¾ˆé‡è¦å•Šï¼Œä¸ç„¶ä¹±ç ï¼Œç¨‹åº5åˆ†é’Ÿï¼Œè°ƒç ä¸¤å°æ—¶å•Š
+		OutputStream out = new FileOutputStream(file,true);//å®ç°è¿½åŠ è¾“å…¥
 		PrintStream prin = new PrintStream(out, true,"UTF-8");
 //		PrintWriter prin = new PrintWriter(new FileOutputStream(file,true));
 		prin.println("BEGIN:VCARD");
